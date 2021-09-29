@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: phpapp
-        image: habib02/tsp-projet-app:35
+        image: habib02/tsp-projet-app:36
         imagePullPolicy: "Always"
         resources:
           requests:
