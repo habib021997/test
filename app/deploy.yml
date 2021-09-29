@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+        app: tspproject
+        tier: frontend
+  template:
+    metadata:
+      labels:
+        app: tspproject
+        tier: frontend
+    spec:
+      containers:
+      - name: phpapp
+        image: habib02/tsp-projet-app:35
+        imagePullPolicy: "Always"
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 80
