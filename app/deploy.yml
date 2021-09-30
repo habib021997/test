@@ -40,6 +40,8 @@ spec:
   ports:
     # the port that this service should serve on
   - port: 80
+    targetPort: 80
+    nodePort: 30007
   
   selector:
     app: tspproject
