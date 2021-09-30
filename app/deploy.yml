@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: phpapp
-        image: habib02/tsp-projet-app:.GIT_COMMIT
+        image: habib02/tsp-projet-app:
         imagePullPolicy: "Always"
         resources:
           requests:
