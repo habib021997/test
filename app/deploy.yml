@@ -42,4 +42,4 @@ spec:
   - port: 80
   selector:
     app: tspproject
-    tier: test      
+    tier: frontend      
