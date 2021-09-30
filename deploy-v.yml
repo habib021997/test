@@ -40,6 +40,7 @@ spec:
   ports:
     # the port that this service should serve on
   - port: 80
+  
   selector:
     app: tspproject
-    tier: test      
+    tier: frontend      
