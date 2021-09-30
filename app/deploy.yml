@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: phpapp
-        image: habib02/tsp-projet-app:48
+        image: habib02/tsp-projet-app:49
         imagePullPolicy: "Always"
         resources:
           requests:
@@ -40,8 +40,6 @@ spec:
   ports:
     # the port that this service should serve on
   - port: 80
-    targetPort: 80
-    nodePort: 30007
   selector:
     app: tspproject
     tier: test      
