@@ -46,7 +46,7 @@ kind: Deployment
 metadata:
   name: fire
 spec:
-  replicas: 2
+  replicas: 1
   selector:
      matchLabels:
        app: nf-app
