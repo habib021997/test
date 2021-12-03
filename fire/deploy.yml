@@ -72,10 +72,10 @@ spec:
         #       configMapKeyRef:
         #         name: nf-configmap
         #         key: PassWord      
-        resources:
-          requests:
-            cpu: 100m
-            memory: 100Mi
+        # resources:
+        #   requests:
+        #     cpu: 100m
+        #     memory: 100Mi
         ports:
         - containerPort: 5000
 ---
